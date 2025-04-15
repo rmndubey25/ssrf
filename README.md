@@ -33,7 +33,7 @@ A comprehensive and powerful tool for detecting Server-Side Request Forgery (SSR
 
 ```bash
 # Clone the repository
-git clone https://github.com/rmndubey25/ssrf-scanner.git
+git clone https://github.com/rmndubey25/ssrf.git
 cd ssrf-scanner
 
 # Install dependencies
