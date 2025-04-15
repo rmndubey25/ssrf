@@ -45,32 +45,32 @@ pip install -r requirements.txt
 ### Basic Usage
 
 ```bash
-python ssrf_scanner.py https://target-website.com
+python ssrf-scanner.py https://target-website.com
 ```
 
 ### Advanced Options
 
 ```bash
 # Specify output file
-python ssrf_scanner.py https://target-website.com -o results.json
+python ssrf-scanner.py https://target-website.com -o results.json
 
 # Set crawling depth and concurrency
-python ssrf_scanner.py https://target-website.com --depth 3 -c 20
+python ssrf-scanner.py https://target-website.com --depth 3 -c 20
 
 # Enable callback server for blind SSRF detection
-python ssrf_scanner.py https://target-website.com --callback --callback-port 8080
+python ssrf-scanner.py https://target-website.com --callback --callback-port 8080
 
 # Add authentication cookies
-python ssrf_scanner.py https://target-website.com --cookies "session=abc123;user=admin"
+python ssrf-scanner.py https://target-website.com --cookies "session=abc123;user=admin"
 
 # Use a proxy
-python ssrf_scanner.py https://target-website.com --proxy http://127.0.0.1:8080
+python ssrf-scanner.py https://target-website.com --proxy http://127.0.0.1:8080
 ```
 
 ### Full Command Line Options
 
 ```
-usage: ssrf_scanner.py [-h] [-o OUTPUT] [-c CONCURRENCY] [-t TIMEOUT] [-d DELAY]
+usage: ssrf-scanner.py [-h] [-o OUTPUT] [-c CONCURRENCY] [-t TIMEOUT] [-d DELAY]
                       [--depth DEPTH] [--no-verify-ssl] [--no-redirect]
                       [--callback] [--callback-host CALLBACK_HOST]
                       [--callback-port CALLBACK_PORT] [--cookies COOKIES]
